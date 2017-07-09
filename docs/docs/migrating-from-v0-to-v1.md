@@ -195,8 +195,7 @@ Now we can create pages for each markdown file using our slug. In the same
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
-  return new Promise((resolve, reject) => {
-    const pages = []
+  return new Promise((resolve, reject) => {    
     const blogPost = path.resolve("src/templates/blog-post.js")
     // Query for all markdown "nodes" and for the slug we previously created.
     resolve(
