@@ -76,7 +76,11 @@ export const pageQuery = graphql`
 `
 ```
 
-exporting that from the same file as a React component will make the config information available to the component as a `data` prop on the component.  For instance, the title attribute could be referenced as  `props.data.site.siteMetadata.title`.  
+exporting that from the same file as a React component will make the config information available to the component as a `data` prop on the component.  For instance, the title attribute could be referenced as  `props.data.site.siteMetadata.title`.
+
+Add Graphql to the project:
+
+`npm install --save graphql`. 
 
 ## Migrate wrapper components to template components
 
